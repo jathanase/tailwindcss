@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>TailwindCss</title>
+</head>
+
+<body>
+
+    <header class="flex items-center justify-center bg-cyan-400 w-full">
+        <h1 class="text-3xl font-bold p-3 text-white">
+            TailwindCss
+        </h1>
+        <img src="img/Tailwind_CSS_Logo.svg.png" alt="tailwindLogo" class="w-20 h-20 p-3 brightness-0 invert">
+    </header>
+
+    <main>
+        <section class="presentation">
+            <article class="flex items-center flex-col bg-slate-300 p-20">
+                <h1 class="text-3xl font-bold mb-5">Qu'est ce que TailwindCss</h1>
+                <p>
+                    TailwindCss est un framework CSS qui permet de designer facilement et simplement les pages d'un site web. Il s'agit d'un framework utility first (il s'git d'une méthode de travail en CSS pour organiser les éléments, faciliter la la maintenance et limiter
+                    les effets de bords en donnant des noms aux classes les noms qui correspondent aux propriétés CSS ) créer en Août 2017 par <a href="https://adamwathan.me/" class="text-blue-600">Adam Wathan</a>. Ce framework ne
+                    contient que les bases brutes comme les marges, les tailles, les styles, les couleurs, le positionnement, etc, ce qui lui permet de donner une certaine liberté au développeur lors de la création de la création de ses éléments.
+                </p>
+            </article>
+            <img class="devImg" src="img/developpeur-web.jpg" alt="DeveloppeurImage">
+        </section>
+        <section class="flex flex-col items-center">
+            <article>
+                <h1 class="text-center text-3xl font-bold py-20 ">Avantages</h1>
+                <ul>
+                    <li class="elem">
+                        <img src="img/Tailwind_js_config.png" alt="codeTailwindConfigJs">
+                        <div class="bg-slate-300 p-20">
+                            <h2 class="text-2xl font-bold mb-10">Un outil assez personnalisable</h2>
+                            <p> En effet cette librairie a été conçue afin de donner une certaine liberté aux développeurs. Le fichier de configuration (tailwind.config.js) est personnalisable et il est possible d'y ajouter des classes personnelles.</br>
+                                Par exemple avec les éléments gold qui ont été ajouté, il est possible de les apppeler pour une couleur de police par exemple en faisant: <code>text-gold-light</code>. Il est également possible de personnaliser un élément
+                                son nom de classe-[propriété] comme <code>text-[50px]</code>.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="elem">
+                        <div class="bg-slate-300 p-20">
+                            <h2 class="text-2xl font-bold mb-10">Une prise en main rapide</h2>
+                            <p> La librairie tailwind contient des classes intuitives et la documentation fournit par le
+                                <a href="https://tailwindcss.com/" class="text-blue-600">site officiel</a>. Il y a aussi une palette de couleurs conséquente avec 8 couleurs et 10 déclinaisons pour chaque couleur. Par exemple comme vous pouvez le voir
+                                dans le code suivant, <code>bg-cyan-400</code> (bg pour background) permet de donner la couleur cyan qu'on a pour notre barre en haut de page. Le code <code>text-3xl</code> équivaut à
+                                <code>font-size: 1.875rem; line-height: 2.25rem;</code>. Il s'agit d'une valeur de base et il est possible de la trouver dans la documentation de tailwind.
+                            </p>
+                        </div>
+                        <img src="img/header.PNG" alt="exempleCode">
+                    </li>
+                    <li class="bg-slate-300 p-20">
+                        <h2 class="text-2xl font-bold mb-10">Ne contient pas de composant standards</h2>
+                        <p>Contrairement à ses concurents directs <a href="https://getbootstrap.com/" class="text-blue-600">Boostrap</a> et de <a href="https://get.foundation/" class="text-blue-600">Foundation</a> , il ne permet pas de creer des éléments
+                            tels que des bouttons ou les barres de navigations. Cependant cette contrainte donne une extrême liberter de personnalisation aux développeurs lors de a création de ses éléments et évite de combattre le framework pour imposer
+                            son style.</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="w-full">
+                <h1 class="text-center text-3xl font-bold py-20 ">Inconvénients</h1>
+                <ul class="m-0 p-0">
+                    <li class="bg-slate-300 p-20">
+                        <h2 class="text-2xl font-bold mb-10">Une conception plus importante</h2>
+                        <p>Sur des projets très importants avec un grand nombre de composant, <a href="https://getbootstrap.com/" class="text-blue-600">Boostrap</a> reste beaucoup plus adapté. Tailwind ne permet que de styliser que les éléments mais pas
+                            d'en créer, de ce fait il est necessaire que le développeur créé tous les éléments lui même.
+                        </p>
+                    </li>
+                    <li class="elem">
+                        <div class="bg-slate-300 p-20">
+                            <h2 class="text-2xl font-bold mb-10">Un code assez vite illisible</h2>
+                            <p>Ceci est un point commun avec tous les framework css. Dès qu'il y a un très grand nombre de classe pour un élément, il devient difficile de lire et de maintenir le code.</br>
+                                Par exemple, avec le code suivant qui permet de changer le logo de couleur de tailwind en blanc et le dimensionner, il fallait déjà tous ces éléments. Certe il faut autant de code pour le faire en css mais cela reste quand même beaucoup plus lisible car
+                                une ligne correspond à un style mais avec les framework css, tous nos styles sont ajouter à la suite.
+                            </p>
+                        </div>
+                        <img src="img/header.PNG" alt="header">
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="flex flex-col items-center">
+            <article class="w-full">
+                <h1 class="text-center text-3xl font-bold py-20 ">Installation et documentation</h1>
+                <div class="bg-slate-300 p-20">
+                    <p>Pour l'installation, vous pourrez la trouver sur site de TailwindCss au lien suivant <a href="https://tailwindcss.com/docs/installation" class="text-blue-600">https://tailwindcss.com/docs/installation</a> Elle est très complète et
+                        bien expliquée pour les différents cas de figure et les différents outils qu'on veut utiliser. </p>
+                    <p>Concernant la documentation vous pourrez la trouver à ce lien <a href="https://tailwindcss.com/docs/flex-basis" class="text-blue-600">https://tailwindcss.com/docs/flex-basis</a></p>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="flex flex-wrap bg-cyan-400 p-20 justify-around text-white ">
+        <div>
+            <h3 class="text-xl font-bold">Bibliographie</h3>
+            <ul>
+                <li><a href="https://www.numendo.com/blog/framework/tailwind-css-framework-totalement-personnalisable/">Numendo</a></li>
+                <li><a href="https://pinegrow.com/tutorials/customizing-a-tailwind-css-theme/">Pinegrow</a></li>
+                <li><a href="https://tailwindcss.com">TailwindCSS</a></li>
+                <li><a href="https://adamwathan.me/">Adam Wathan site</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold">Contacts</h3>
+            <p>Réalisé par ATHANASE Jean-Emmanuel DAWIN B</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold">Infos complémentaires</h3>
+            <p>Site réalisé principalement avec TailwindCSS</p>
+        </div>
+    </footer>
+</body>
+
+</html>
